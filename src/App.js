@@ -1,5 +1,8 @@
 import * as echarts from 'echarts';
 import LineChart from './component/LineChart'
+import BarChart from './component/BarChart'
+import PieChart from './component/PieChart'
+
 
 
 function App() {
@@ -20,21 +23,20 @@ function App() {
             <a href="https://defillama.com/" style={{ marginLeft: '20px', marginTop: '30px'}}> from defillama</a>
           </div>
           <LineChart />
-          {/* <div className="lineChart" ></div> */}
         </div>
         <div style={{ width: '50%', height: '500px'}}>
           <div className="title" style={{ display: 'flex'}}>
             <h2>不同DEX的交易量比较</h2>
             <a href="https://dune.com/hagaetc/dex-metrics" style={{ marginLeft: '20px', marginTop: '30px'}}> from dune</a>
           </div>
-          <div className="barChart" style={{ width: '100%', height: '250px',backgroundColor: 'blue'}}></div>
+          <BarChart />
         </div>
         <div style={{ width: '50%', height: '500px'}}>
           <div className="title" style={{ display: 'flex'}}>
             <h2>某个ERC20前10持仓地址的份额比较</h2>
             <a href="https://etherscan.io/token/tokenholderchart/0xdac17f958d2ee523a2206206994597c13d831ec7" style={{ marginLeft: '20px', marginTop: '30px'}}> from etherscan</a>
           </div>
-          <div className="pieChart" style={{ width: '100%', height: '250px',backgroundColor: 'green'}}></div>
+          <PieChart />
         </div>
         <div style={{ width: '50%', height: '500px'}}>
           <div className="title" style={{ display: 'flex'}}>
